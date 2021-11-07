@@ -14,10 +14,11 @@ class Movies {
     }
 }
 
+
+
 let getMovies = async (req, res) => {
-
     let movieName = req.query.query;
-
+    
     const url = `https://api.themoviedb.org/3/search/movie?api_key=${movieAPI}&query=${movieName}&page=1`;
     
     try {
